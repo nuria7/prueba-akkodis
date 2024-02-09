@@ -1,0 +1,9 @@
+{
+    "/Prueba tecnica/frontconfig": {
+        "target": "http://localhost:4200",
+        "secure": false,
+        "pathRewrite": {
+            "/Prueba tecnica/frontconfig": "/assets/config.json"
+        }
+    }
+}

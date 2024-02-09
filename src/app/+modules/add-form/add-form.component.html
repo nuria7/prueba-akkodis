@@ -1,0 +1,26 @@
+<div class="form-container" fxLayout="column" fxFlex="100" fxFlex.lt-md="1 0 auto">
+    <section class="header-form">
+        <div fxFlex="100" fxLayout="row" fxLayoutAlign="center start">
+            <h2>AÑADIR NUEVA TAREA</h2>
+        </div>
+
+        <button class="icon-close" fxLayout="row" fxFlex="18px" (click)="backButton()">
+            <mat-icon>close</mat-icon>
+        </button>
+    </section>
+    <section>
+        <form [formGroup]="addForm" class="form-contain" fxFlex="100" fxLayoutAlign="space-between stretch" fxLayout="column">
+            <mat-form-field appearance="fill">
+                <label class="label" fxFlex="0 1 100%" fxLayout="row">Nombre de la tarea</label>
+                <input matInput formControlName="nameTask" />
+            </mat-form-field>
+
+            <button class=" submit " (click)="save() " fxFlex="50" fxFlex.lt-md="50" fxFlex.lt-lg="40 " mat-button type="button " [disabled]="addForm.invalid " [ngClass]="addForm.invalid ? 'disable' : '' ">
+                AÑADIR
+            </button>
+            <button class="cancel " (click)="backButton() " fxFlex="50" fxFlex.lt-md="50" fxFlex.lt-lg="40 " mat-button type="button ">
+                CANCELAR
+            </button>
+        </form>
+    </section>
+</div>

@@ -1,0 +1,23 @@
+{
+    "environment": "dev",
+    "platform": "web",
+    "appName": "Prueba tecnica",
+    "app": {
+        "features": {
+            "customLog": true
+        },
+        "properties": {
+            "idleUserTime": 300000,
+            "language": "es",
+            "__comment__": "------- Es un ejemplo de codigo de error -------",
+            "errors": {}
+        },
+        "google": {
+            "noindex": true
+        },
+        "base_link": "",
+        "rest": {
+            "baseUrl": ""
+        }
+    }
+}

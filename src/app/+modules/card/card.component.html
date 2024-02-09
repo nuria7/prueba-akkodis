@@ -1,0 +1,21 @@
+<div *ngIf="!itemCompleted" @fadeOut class="app-card">
+    <div class="app-card__picture">
+        <div class="app-card-image">
+            <mat-icon>assignment</mat-icon>
+        </div>
+    </div>
+    <div class="app-card__info">
+        <div class="app-card__info-title">
+            <span>{{ item.title }}</span>
+        </div>
+        <div class="app-card__info-content">
+            <p>Tarea nº {{ item.id }}</p>
+            <p>{{ item.date | date: 'dd/MM/yyyy' }}</p>
+
+        </div>
+    </div>
+    <div class="app-card__buttons">
+        <mat-icon class="additional-button delete-icon" (click)="deleteItem($event)">delete</mat-icon>
+        <mat-checkbox [checked]="item.completado" (change)="onCheckboxChange($event)"></mat-checkbox>
+    </div>
+</div>

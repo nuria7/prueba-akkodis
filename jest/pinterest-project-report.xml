@@ -1,0 +1,1559 @@
+<testExecutions version="1">
+<file path="src\app\core\services\translations\translations.service.spec.ts">
+<testCase name="TranslationsService should be created" duration="29" />
+<testCase name="TranslationsService should return selected language" duration="11" />
+<testCase name="TranslationsService should return instant translation" duration="9" />
+<testCase name="TranslationsService should get language observable" duration="9" />
+<testCase name="TranslationsService should set language observable" duration="19" />
+<testCase name="TranslationsService should clean language observable" duration="8" />
+<testCase name="TranslationsService should call setCustomDimension and use methods with the selected language" duration="8" />
+<testCase name="TranslationsService should not set default language if a language is already selected" duration="8" />
+<testCase name="TranslationsService should result when not set default language if a language is already selected" duration="16">
+<failure message="Error"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;en&quot;
+Received: &quot;es&quot;
+    at C:\proyecto\src\app\core\services\translations\translations.service.spec.ts:90:20
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+<testCase name="TranslationsService should not set default language if a language is not selected" duration="8">
+<failure message="Error"><![CDATA[Error: expect(spy).toHaveBeenCalledWith(...expected)
+
+Expected: &quot;en&quot;
+Received: &quot;es&quot;
+
+Number of calls: 1
+    at C:\proyecto\src\app\core\services\translations\translations.service.spec.ts:99:28
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+<testCase name="TranslationsService should result when not set default language if a language is not selected" duration="7" />
+<testCase name="TranslationsService should return an Observable&lt;string&gt; with initial value &quot;es&quot;" duration="14" />
+</file>
+<file path="src\app\+modules\created-pines\created-pines.component.spec.ts">
+<testCase name="CreatedPinesComponent should create" duration="510">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;component&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:30:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should ngOnInit()" duration="34">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[Error: Cannot spyOn on a primitive value; undefined given
+    at ModuleMocker.spyOn (C:\proyecto\node_modules\jest-mock\build\index.js:774:13)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:34:10
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should getCookie()" duration="31">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;getCookie&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:46:30
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should null getCookie()" duration="34">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;getCookie&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:52:30
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should getCreations()" duration="55">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;inject&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:58:42
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should getCreations()" duration="22">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;inject&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:71:26
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should getTipoContenido() &quot;POEMAS&quot;" duration="21">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;getTipoContenido&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:83:30
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should getTipoContenido() &quot;CUENTOS&quot;" duration="20">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;getTipoContenido&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:89:30
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should getTipoContenido() &quot;CANCIONES&quot;" duration="24">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;getTipoContenido&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:95:30
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should getTipoContenido() another" duration="19">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;getTipoContenido&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:101:30
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should deberMostrarH2()" duration="18">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot set properties of undefined (setting &apos;tiposContenidoMostrados&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:107:38
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should deberMostrarH2()" duration="35">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot set properties of undefined (setting &apos;tiposContenidoMostrados&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:116:38
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent should deberMostrarH2() null" duration="18">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;deberMostrarH2&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:125:30
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="CreatedPinesComponent dshould deberMostrarH2() empty string" duration="23">
+<failure message="Error"><![CDATA[TypeError: this.http.get(...).pipe is not a function
+    at CreatedPinesComponent.getCreations (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:48:6)
+    at CreatedPinesComponent.ngOnInit (C:\proyecto\src\app\+modules\created-pines\created-pines.component.ts:25:10)
+    at callHook (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2494:22)
+    at callHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2463:17)
+    at executeInitAndCheckHooks (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:2414:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11713:21)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:25:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;deberMostrarH2&apos;)
+    at C:\proyecto\src\app\+modules\created-pines\created-pines.component.spec.ts:133:30
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+</file>
+<file path="src\app\shell\footer\footer.component.spec.ts">
+<testCase name="FooterComponent should create" duration="502">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[Router -&gt; Router]: 
+  NullInjectorError: No provider for Router!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at ChainedInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21488:36)
+    at lookupTokenUsingModuleInjector (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3289:39)
+    at getOrCreateInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3334:12)
+    at &#x275;&#x275;directiveInject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:10306:12)
+    at NodeInjectorFactory.FooterComponent_Factory [as factory] (ng:///FooterComponent/&#x275;fac.js:5:43)
+    at getNodeInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3519:44)
+    at instantiateRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12300:23)
+    at createRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13245:23)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21589:25)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at createSpectator (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1424:29)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1416:27
+    at C:\proyecto\src\app\shell\footer\footer.component.spec.ts:12:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;component&apos;)
+    at C:\proyecto\src\app\shell\footer\footer.component.spec.ts:16:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+</file>
+<file path="src\app\+modules\favorite-pines\favorite-pines.component.spec.ts">
+<testCase name="FavoritePinesComponent should create" duration="89" />
+<testCase name="FavoritePinesComponent should ngOnInit" duration="68">
+<failure message="Error"><![CDATA[Error: expect(jest.fn()).toHaveBeenCalled()
+
+Expected number of calls: &gt;= 1
+Received number of calls:    0
+    at C:\proyecto\src\app\+modules\favorite-pines\favorite-pines.component.spec.ts:44:51
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+<testCase name="FavoritePinesComponent should getCookie()" duration="71" />
+<testCase name="FavoritePinesComponent should null getCookie()" duration="65" />
+<testCase name="FavoritePinesComponent should onScroll()" duration="46" />
+<testCase name="FavoritePinesComponent should onScroll()" duration="41" />
+</file>
+<file path="src\app\+modules\home\home.component.spec.ts">
+<testCase name="HomeComponent should create" duration="373">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[HomeService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at injectInjectorOnly (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4778:33)
+    at &#x275;&#x275;inject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4782:42)
+    at Object.HomeService_Factory [as factory] (ng:///HomeService/&#x275;fac.js:5:39)
+    at R3Injector.hydrate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9252:35)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9146:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at ChainedInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21488:36)
+    at lookupTokenUsingModuleInjector (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3289:39)
+    at getOrCreateInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3334:12)
+    at &#x275;&#x275;directiveInject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:10306:12)
+    at NodeInjectorFactory.HomeComponent_Factory [as factory] (ng:///HomeComponent/&#x275;fac.js:6:7)
+    at getNodeInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3519:44)
+    at instantiateRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12300:23)
+    at createRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13245:23)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21589:25)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at createSpectator (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1424:29)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1416:27
+    at C:\proyecto\src\app\+modules\home\home.component.spec.ts:12:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;component&apos;)
+    at C:\proyecto\src\app\+modules\home\home.component.spec.ts:16:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+</file>
+<file path="src\app\app.component.spec.ts">
+<testCase name="AppComponent should create the app" duration="602">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[ConfigService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at injectInjectorOnly (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4778:33)
+    at &#x275;&#x275;inject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4782:42)
+    at Object.ConfigService_Factory [as factory] (ng:///ConfigService/&#x275;fac.js:5:41)
+    at R3Injector.hydrate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9252:35)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9146:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at ChainedInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21488:36)
+    at lookupTokenUsingModuleInjector (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3289:39)
+    at getOrCreateInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3334:12)
+    at &#x275;&#x275;directiveInject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:10306:12)
+    at NodeInjectorFactory.AppComponent_Factory [as factory] (ng:///AppComponent/&#x275;fac.js:5:40)
+    at getNodeInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3519:44)
+    at instantiateRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12300:23)
+    at createRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13245:23)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21589:25)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at C:\proyecto\src\app\app.component.spec.ts:12:29
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+<testCase name="AppComponent should render title" duration="14">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[ConfigService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at injectInjectorOnly (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4778:33)
+    at &#x275;&#x275;inject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4782:42)
+    at Object.ConfigService_Factory [as factory] (ng:///ConfigService/&#x275;fac.js:5:41)
+    at R3Injector.hydrate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9252:35)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9146:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at ChainedInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21488:36)
+    at lookupTokenUsingModuleInjector (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3289:39)
+    at getOrCreateInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3334:12)
+    at &#x275;&#x275;directiveInject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:10306:12)
+    at NodeInjectorFactory.AppComponent_Factory [as factory] (ng:///AppComponent/&#x275;fac.js:5:40)
+    at getNodeInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3519:44)
+    at instantiateRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12300:23)
+    at createRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13245:23)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21589:25)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at C:\proyecto\src\app\app.component.spec.ts:18:29
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+</file>
+<file path="src\app\+modules\generate-texts\generate-texts.component.spec.ts">
+<testCase name="GenerateTextsComponent should create" duration="305">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at ChainedInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21488:36)
+    at lookupTokenUsingModuleInjector (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3289:39)
+    at getOrCreateInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3334:12)
+    at &#x275;&#x275;directiveInject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:10306:12)
+    at NodeInjectorFactory.GenerateTextsComponent_Factory [as factory] (ng:///GenerateTextsComponent/&#x275;fac.js:5:50)
+    at getNodeInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3519:44)
+    at instantiateRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12300:23)
+    at createRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13245:23)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21589:25)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at C:\proyecto\src\app\+modules\generate-texts\generate-texts.component.spec.ts:15:23
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\proyecto\node_modules\tslib\tslib.js:117:32)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:1325:38
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:441:35)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3796:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:440:64)
+    at Zone.Object.&lt;anonymous&gt;.Zone.runTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:212:51)
+    at drainMicroTaskQueue (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:627:39)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>,<failure message="Error"><![CDATA[Error: expect(received).toBeTruthy()
+
+Received: undefined
+    at C:\proyecto\src\app\+modules\generate-texts\generate-texts.component.spec.ts:21:23
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+</file>
+<file path="src\app\+modules\home\pages\edit-profile\edit-profile.component.spec.ts">
+<testCase name="EditProfileComponent should create" duration="400">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[FormBuilder -&gt; FormBuilder]: 
+  NullInjectorError: No provider for FormBuilder!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at ChainedInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21488:36)
+    at lookupTokenUsingModuleInjector (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3289:39)
+    at getOrCreateInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3334:12)
+    at &#x275;&#x275;directiveInject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:10306:12)
+    at NodeInjectorFactory.EditProfileComponent_Factory [as factory] (ng:///EditProfileComponent/&#x275;fac.js:5:48)
+    at getNodeInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3519:44)
+    at instantiateRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12300:23)
+    at createRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13245:23)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21589:25)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at C:\proyecto\src\app\+modules\home\pages\edit-profile\edit-profile.component.spec.ts:15:23
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\proyecto\node_modules\tslib\tslib.js:117:32)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:1325:38
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:441:35)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3796:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:440:64)
+    at Zone.Object.&lt;anonymous&gt;.Zone.runTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:212:51)
+    at drainMicroTaskQueue (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:627:39)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>,<failure message="Error"><![CDATA[Error: expect(received).toBeTruthy()
+
+Received: undefined
+    at C:\proyecto\src\app\+modules\home\pages\edit-profile\edit-profile.component.spec.ts:21:23
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+</file>
+<file path="src\app\shared\components\sub-header\sub-header.component.spec.ts">
+<testCase name="SubHeaderComponent should create" duration="463">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[Router -&gt; Router]: 
+  NullInjectorError: No provider for Router!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at ChainedInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21488:36)
+    at lookupTokenUsingModuleInjector (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3289:39)
+    at getOrCreateInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3334:12)
+    at &#x275;&#x275;directiveInject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:10306:12)
+    at NodeInjectorFactory.SubHeaderComponent_Factory [as factory] (ng:///SubHeaderComponent/&#x275;fac.js:5:46)
+    at getNodeInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3519:44)
+    at instantiateRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12300:23)
+    at createRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13245:23)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21589:25)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at C:\proyecto\src\app\shared\components\sub-header\sub-header.component.spec.ts:15:23
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\proyecto\node_modules\tslib\tslib.js:117:32)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:1325:38
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:441:35)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3796:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:440:64)
+    at Zone.Object.&lt;anonymous&gt;.Zone.runTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:212:51)
+    at drainMicroTaskQueue (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:627:39)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>,<failure message="Error"><![CDATA[Error: expect(received).toBeTruthy()
+
+Received: undefined
+    at C:\proyecto\src\app\shared\components\sub-header\sub-header.component.spec.ts:21:23
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+</file>
+<file path="src\app\+modules\home\pages\profile\cards\cards.component.spec.ts">
+<testCase name="CardsComponent should create" duration="623">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[HomeService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at injectInjectorOnly (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4778:33)
+    at &#x275;&#x275;inject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4782:42)
+    at Object.HomeService_Factory [as factory] (ng:///HomeService/&#x275;fac.js:5:39)
+    at R3Injector.hydrate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9252:35)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9146:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at ChainedInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21488:36)
+    at lookupTokenUsingModuleInjector (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3289:39)
+    at getOrCreateInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3334:12)
+    at &#x275;&#x275;directiveInject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:10306:12)
+    at NodeInjectorFactory.CardsComponent_Factory [as factory] (ng:///CardsComponent/&#x275;fac.js:5:42)
+    at getNodeInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3519:44)
+    at instantiateRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12300:23)
+    at createRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13245:23)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21589:25)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at C:\proyecto\src\app\+modules\home\pages\profile\cards\cards.component.spec.ts:15:23
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\proyecto\node_modules\tslib\tslib.js:117:32)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:1325:38
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:441:35)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3796:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:440:64)
+    at Zone.Object.&lt;anonymous&gt;.Zone.runTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:212:51)
+    at drainMicroTaskQueue (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:627:39)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>,<failure message="Error"><![CDATA[Error: expect(received).toBeTruthy()
+
+Received: undefined
+    at C:\proyecto\src\app\+modules\home\pages\profile\cards\cards.component.spec.ts:21:23
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+</file>
+<file path="src\app\+modules\my-profile\my-profile.component.spec.ts">
+<testCase name="MyProfileComponent should create" duration="685">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at ChainedInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21488:36)
+    at lookupTokenUsingModuleInjector (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3289:39)
+    at getOrCreateInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3334:12)
+    at &#x275;&#x275;directiveInject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:10306:12)
+    at NodeInjectorFactory.MyProfileComponent_Factory [as factory] (ng:///MyProfileComponent/&#x275;fac.js:5:46)
+    at getNodeInjectable (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:3519:44)
+    at instantiateRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12300:23)
+    at createRootComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13245:23)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21589:25)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at C:\proyecto\src\app\+modules\my-profile\my-profile.component.spec.ts:15:23
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (C:\proyecto\node_modules\tslib\tslib.js:117:32)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:1325:38
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:441:35)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3796:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invokeTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:440:64)
+    at Zone.Object.&lt;anonymous&gt;.Zone.runTask (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:212:51)
+    at drainMicroTaskQueue (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:627:39)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>,<failure message="Error"><![CDATA[Error: expect(received).toBeTruthy()
+
+Received: undefined
+    at C:\proyecto\src\app\+modules\my-profile\my-profile.component.spec.ts:21:23
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+</file>
+<file path="src\app\+modules\help-page\help-page.component.spec.ts">
+<testCase name="HelpPageComponent should create" duration="360">
+<failure message="Error"><![CDATA[Error: NG0302: The pipe &apos;translate&apos; could not be found in the &apos;HelpPageComponent&apos; component. Verify that it is declared or imported in this module. Find more at https://angular.io/errors/NG0302
+    at getPipeDef (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:22682:15)
+    at &#x275;&#x275;pipe (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:22638:19)
+    at HelpPageComponent_Template (ng:///HelpPageComponent.js:18:9)
+    at executeTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11835:9)
+    at renderView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11635:13)
+    at renderComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12840:5)
+    at renderChildComponents (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11494:9)
+    at renderView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11660:13)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21590:13)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at createSpectator (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1424:29)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1416:27
+    at C:\proyecto\src\app\+modules\help-page\help-page.component.spec.ts:12:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;component&apos;)
+    at C:\proyecto\src\app\+modules\help-page\help-page.component.spec.ts:16:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+</file>
+<file path="src\app\+modules\contact-page\contact-page.component.spec.ts">
+<testCase name="ContactPageComponent should create" duration="431">
+<failure message="Error"><![CDATA[Error: NG0302: The pipe &apos;translate&apos; could not be found in the &apos;ContactPageComponent&apos; component. Verify that it is declared or imported in this module. Find more at https://angular.io/errors/NG0302
+    at getPipeDef (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:22682:15)
+    at &#x275;&#x275;pipe (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:22638:19)
+    at ContactPageComponent_Template (ng:///ContactPageComponent.js:18:9)
+    at executeTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11835:9)
+    at renderView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11635:13)
+    at renderComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12840:5)
+    at renderChildComponents (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11494:9)
+    at renderView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11660:13)
+    at ComponentFactory.create (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21590:13)
+    at initComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26292:51)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at TestBedRender3.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26295:41)
+    at Function.createComponent (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26117:37)
+    at createSpectator (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1424:29)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1416:27
+    at C:\proyecto\src\app\+modules\contact-page\contact-page.component.spec.ts:14:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[Error: expect(received).toBeTruthy()
+
+Received: undefined
+    at C:\proyecto\src\app\+modules\contact-page\contact-page.component.spec.ts:19:23
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+</file>
+<file path="src\app\+modules\login\login.service.spec.ts">
+<testCase name="LoginService should be created" duration="979">
+<failure message="Error"><![CDATA[NullInjectorError: R3InjectorError(DynamicTestModule)[LoginService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:8990:27)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9157:33)
+    at injectInjectorOnly (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4778:33)
+    at &#x275;&#x275;inject (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:4782:42)
+    at Object.LoginService_Factory [as factory] (ng:///LoginService/&#x275;fac.js:5:40)
+    at R3Injector.hydrate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9252:35)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9146:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at TestBedRender3.inject (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26238:52)
+    at Function.inject (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26110:37)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1736:62
+    at C:\proyecto\src\app\+modules\login\login.service.spec.ts:17:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>,<failure message="Error"><![CDATA[Error: expect(received).toBeTruthy()
+
+Received: undefined
+    at C:\proyecto\src\app\+modules\login\login.service.spec.ts:22:21
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>,<failure message="Error"><![CDATA[Error: NG0200: Circular dependency in DI detected for LoginService. Find more at https://angular.io/errors/NG0200
+    at throwCyclicDependencyError (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:240:11)
+    at R3Injector.hydrate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9248:13)
+    at R3Injector.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:9146:33)
+    at NgModuleRef.get (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21690:33)
+    at TestBedRender3.inject (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26238:52)
+    at Function.inject (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:26110:37)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1721:23
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+</testCase>
+</file>
+<file path="src\app\+modules\inicio\inicio.component.spec.ts">
+<testCase name="InicioComponent should create" duration="1005">
+<failure message="Error"><![CDATA[Error: NG0302: The pipe &apos;translate&apos; could not be found in the &apos;InicioComponent&apos; component. Verify that it is declared or imported in this module. Find more at https://angular.io/errors/NG0302
+    at getPipeDef (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:22682:15)
+    at &#x275;&#x275;pipe (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:22638:19)
+    at InicioComponent_div_6_Template (ng:///InicioComponent.js:8:5)
+    at executeTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11835:9)
+    at renderView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11635:13)
+    at TemplateRef2.createEmbeddedView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:23081:9)
+    at ViewContainerRef2.createEmbeddedView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:23199:37)
+    at NgIf._updateView (C:\proyecto\node_modules\@angular\common\fesm2020\common.mjs:3468:45)
+    at NgIf.set ngIf [as ngIf] (C:\proyecto\node_modules\@angular\common\fesm2020\common.mjs:3441:14)
+    at setInputsForProperty (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:13120:22)
+    at elementPropertyInternal (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12218:9)
+    at &#x275;&#x275;property (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:14440:9)
+    at InicioComponent_Template (ng:///InicioComponent.js:54:9)
+    at executeTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11835:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11698:13)
+    at refreshComponent (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12793:13)
+    at refreshChildComponents (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11488:9)
+    at refreshView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11748:13)
+    at renderComponentOrTemplate (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:11815:9)
+    at tickRootContext (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12969:13)
+    at detectChangesInRootView (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:12995:5)
+    at RootViewRef.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:21421:9)
+    at ComponentFixture._tick (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:140:32)
+    at C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:153:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Object.onInvoke (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26312:33)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at NgZone.run (C:\proyecto\node_modules\@angular\core\fesm2020\core.mjs:26166:28)
+    at ComponentFixture.detectChanges (C:\proyecto\node_modules\@angular\core\fesm2020\testing.mjs:152:25)
+    at Spectator.detectChanges (C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:458:22)
+    at C:\proyecto\node_modules\@ngneat\spectator\fesm2020\ngneat-spectator.mjs:1418:23
+    at C:\proyecto\src\app\+modules\inicio\inicio.component.spec.ts:47:17
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestLifecycle (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>,<failure message="Error"><![CDATA[TypeError: Cannot read properties of undefined (reading &apos;component&apos;)
+    at C:\proyecto\src\app\+modules\inicio\inicio.component.spec.ts:52:22
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:407:30)
+    at ProxyZoneSpec.Object.&lt;anonymous&gt;.ProxyZoneSpec.onInvoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:3765:43)
+    at ZoneDelegate.Object.&lt;anonymous&gt;.ZoneDelegate.invoke (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:406:56)
+    at Zone.Object.&lt;anonymous&gt;.Zone.run (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:167:47)
+    at Object.wrappedFunc (C:\proyecto\node_modules\zone.js\bundles\zone-testing-bundle.umd.js:4250:34)
+    at Object.asyncJestTest (C:\proyecto\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:151:43)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:89:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:72:19)
+    at C:\proyecto\node_modules\jest-jasmine2\build\queueRunner.js:119:41]]></failure>
+</testCase>
+</file>
+<file path="src\app\shell\header\components\nav-languages\languages.component.spec.ts">
+<testCase name="LanguagesComponent should create" duration="357" />
+<testCase name="LanguagesComponent should ngOnDestroy" duration="72" />
+</file>
+<file path="src\app\core\services\cookie\cookie.service.spec.ts">
+<testCase name="CookieService should be created" duration="56" />
+<testCase name="CookieService should be check will return false" duration="16" />
+<testCase name="CookieService should be check" duration="35" />
+<testCase name="CookieService should be get will return empty string" duration="14" />
+<testCase name="CookieService should be getAll" duration="25" />
+<testCase name="CookieService should be set" duration="11" />
+<testCase name="CookieService should be delete" duration="14" />
+<testCase name="CookieService should be deleteAll" duration="14" />
+<testCase name="CookieService should be getCookieRegExp" duration="12" />
+<testCase name="CookieService should get a cookie" duration="27" />
+</file>
+<file path="src\app\core\services\webview-app\webview-app.service.spec.ts">
+<testCase name="WebviewAppService should be created" duration="29" />
+<testCase name="WebviewAppService should be callNative" duration="11" />
+<testCase name="WebviewAppService should be callNative" duration="6" />
+<testCase name="WebviewAppService should be callIOS" duration="7" />
+<testCase name="WebviewAppService should be callIOS parameter will be null" duration="4" />
+</file>
+<file path="src\app\shared\pipes\order\order.pipe.spec.ts">
+<testCase name="OrderPipe create an instance" duration="5" />
+<testCase name="OrderPipe should return empty array" duration="2" />
+<testCase name="OrderPipe should return array with one element" duration="1" />
+<testCase name="OrderPipe should return array as it is" duration="2" />
+<testCase name="OrderPipe should order by id" duration="1" />
+<testCase name="OrderPipe should order by a" duration="2" />
+<testCase name="OrderPipe should order strings too" duration="1" />
+<testCase name="OrderPipe should order case-insensitively strings too" duration="25" />
+<testCase name="OrderPipe should not revert ordered array" duration="1" />
+<testCase name="OrderPipe should revert ordered array" duration="1" />
+<testCase name="OrderPipe should work with not defined as well" duration="1" />
+<testCase name="OrderPipe should array without expression" duration="1" />
+<testCase name="OrderPipe should chars array without expression" duration="0" />
+<testCase name="OrderPipe should ordered by array" duration="1" />
+<testCase name="OrderPipe should ordered nested elements" duration="7" />
+<testCase name="OrderPipe should not throw error on ordering &quot;undefined&quot; deep element" duration="1" />
+<testCase name="OrderPipe should sort deep elements" duration="1" />
+<testCase name="OrderPipe should sort array by deep prop" duration="8" />
+<testCase name="OrderPipe should sort case-insensitively array by deep prop" duration="1" />
+<testCase name="OrderPipe number-like strings should compare two number-like strings" duration="1" />
+<testCase name="OrderPipe number-like strings should compare two number-like strings with commas" duration="1" />
+<testCase name="OrderPipe order with comparator should return same order with &quot;0&quot;-comparator" duration="1" />
+<testCase name="OrderPipe order with comparator should change the order with custom comparator" duration="1" />
+<testCase name="OrderPipe order with comparator should return change to order with custom comparator" duration="1" />
+<testCase name="OrderPipe order with comparator test not valid values for comparator should still work if comparator is null" duration="1" />
+<testCase name="OrderPipe order with comparator test not valid values for comparator should still work if comparator is undefined" duration="1" />
+<testCase name="OrderPipe order with comparator test not valid values for comparator should still work if comparator is not returning anything" duration="1" />
+<testCase name="OrderPipe multi field sort should sort by multiple fields" duration="1" />
+<testCase name="OrderPipe multi field sort should keep the same order" duration="1" />
+<testCase name="OrderPipe multi field sort should not modify original array" duration="1" />
+</file>
+<file path="src\app\shared\components\popups\popups.component.spec.ts">
+<testCase name="PopupsComponent should create" duration="220" />
+<testCase name="PopupsComponent should accept" duration="52" />
+<testCase name="PopupsComponent should cancel" duration="55" />
+<testCase name="PopupsComponent should confirm" duration="47" />
+</file>
+<file path="src\app\shell\header\components\nav-header\nav-header.component.spec.ts">
+<testCase name="NavHeaderComponent should create" duration="241" />
+</file>
+<file path="src\app\core\services\utils\utils.service.spec.ts">
+<testCase name="UtilsService should be created" duration="48" />
+</file>
+<file path="src\app\+modules\cookies-policy\cookies-policy.component.spec.ts">
+<testCase name="CookiesPolicyComponent should create" duration="137" />
+<testCase name="CookiesPolicyComponent should configCookies" duration="83" />
+</file>
+<file path="src\app\shell\cookie\cookie\cookie-config-modal\cookie-config-modal.component.spec.ts">
+<testCase name="CookieConfigModalComponent should create" duration="192" />
+<testCase name="CookieConfigModalComponent should close dialog with form value" duration="100" />
+<testCase name="CookieConfigModalComponent should close dialog" duration="93" />
+<testCase name="CookieConfigModalComponent should close dialog with &quot;policy&quot;" duration="74" />
+</file>
+<file path="src\app\shared\pipes\safe-html\safe-html.pipe.spec.ts">
+<testCase name="SafePipe can load instance" duration="76" />
+<testCase name="SafePipe transforms X to Y with html" duration="9" />
+<testCase name="SafePipe transforms X to Y with style" duration="4" />
+<testCase name="SafePipe transforms X to Y with script" duration="5" />
+<testCase name="SafePipe transforms X to Y with url" duration="7" />
+<testCase name="SafePipe transforms X to Y with resourceUrl" duration="42" />
+</file>
+<file path="src\app\shell\loader\loader.component.spec.ts">
+<testCase name="LoaderComponent should create" duration="51" />
+</file>
+<file path="src\app\core\services\user\user.service.spec.ts">
+<testCase name="UserService should be created" duration="27" />
+</file>
+<file path="src\app\shared\components\img-header\img-header.component.spec.ts">
+<testCase name="ImgHeaderComponent should create" duration="87" />
+</file>
+<file path="src\app\shared\components\empty-data\empty-data.component.spec.ts">
+<testCase name="EmptyDataComponent should create" duration="103" />
+</file>
+<file path="src\app\shell\loader\services\loader.service.spec.ts">
+<testCase name="LoaderService should be created" duration="44" />
+</file>
+<file path="src\app\shell\cookie\cookie\cookie-modal\cookies-app-modal.service.spec.ts">
+</file>
+<file path="src\app\shell\cookie\cookie\cookie-modal\cookie-modal.component.spec.ts">
+</file>
+<file path="src\app\+modules\home\services\home.service.spec.ts">
+</file>
+<file path="src\app\shell\header\menu-mobile\menu-mobile.component.spec.ts">
+</file>
+<file path="src\app\+modules\login\login.component.spec.ts">
+</file>
+<file path="src\app\shell\header\header.component.spec.ts">
+</file>
+</testExecutions>

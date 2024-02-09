@@ -1,0 +1,63 @@
+.app-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border: 1px solid rgb(161, 111, 102);
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(234, 223, 223);
+    p {
+        margin: 0;
+    }
+    &__picture {
+        margin-right: 1rem;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: left;
+        width: 70%;
+    }
+    &__info-title {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: row;
+        width: 100%;
+        span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+    }
+    &__info-content {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 70%;
+        &>div:first-child {
+            margin-right: 1rem;
+        }
+        .completed-item-button {
+            border-radius: 0.25rem;
+        }
+        .delete-icon {
+            display: none;
+            .app-card:hover & {
+                display: block;
+                color: rgb(110, 108, 108);
+                cursor: pointer;
+            }
+        }
+    }
+}

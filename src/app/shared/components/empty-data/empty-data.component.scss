@@ -1,0 +1,19 @@
+.empty-container {
+  margin: 4rem auto 2rem;
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+    margin-top: 0.5rem;
+  }
+  &.empty-container-ltmd {
+    margin: 1rem auto 0;
+  }
+
+  .img-contain {
+    .img-empty {
+      width: 70px;
+    }
+  }
+}

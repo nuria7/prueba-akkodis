@@ -1,0 +1,6 @@
+<div>
+    <div *ngFor="let item of getFilteredItems()">
+        <app-card [rawItem]="item" [currentFilter]="currentFilter" [completable]="options.completable" (deleteItem)="deleteItem(item)" (checkboxChange)="onCardCheckboxChange($event, item)">
+        </app-card>
+    </div>
+</div>

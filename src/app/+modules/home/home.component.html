@@ -1,0 +1,18 @@
+<div class="total-container" fxFlex="1270px" fxLayout="column" fxFlex.lt-lg="80" fxFlex.lt-md="98">
+
+    <div>
+        <button (click)="setFilterType('all')">Todos los artículos</button>
+        <button (click)="setFilterType('pending')">Items pendientes</button>
+        <button (click)="setFilterType('completed')">Artículos completados</button>
+    </div>
+
+    <button mat-button (click)="openModalItem()" fxFlex="50" fxFlex.lt-md="100" fxLayout="row" fxLayoutAlign="start center">
+        <mat-icon>add</mat-icon>
+        AÑADIR TAREA
+    </button>
+
+    <div class="profile-main" fxFlex="100" fxFlex.lt-md="1 0 auto" fxLayout="column" fxLayoutAlign="center stretch">
+        <app-empty-data *ngIf="(asyncListItems | async)?.length === 0"></app-empty-data>
+        <app-list-item (itemDeleted)="handleItemDeleted()" (filterChanged)="handleFilterChange($event)" [rawList]="asyncListItems | async" [options]="itemList"></app-list-item>
+    </div>
+</div>
